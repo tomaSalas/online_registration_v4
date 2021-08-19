@@ -1,0 +1,51 @@
+
+
+
+/*  CSS RULES   */
+
+
+.main_wrapper {
+    max-width:320px;
+    width: 100%;
+    margin: auto
+
+}
+.header_ribbon {
+    width: auto;
+    height: auto;
+    background-color: rgb(14, 37, 66);
+    padding: 5px;
+}
+
+.header_ribbon h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.header_title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(14, 37, 66);
+    width: 320px;
+    margin-top: 25px;
+
+}
+
+.header_para {
+    text-align: center;
+    color: rgb(47, 67, 90);
+    font-size: 1.2rem;
+
+}
+
+.header_line {
+    width: 96%;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+}
+
+
+
