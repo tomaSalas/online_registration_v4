@@ -11,7 +11,10 @@ body {
 .main_wrapper {
     min-width:320px;
     width: 100%;
-    margin: auto
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 .header_ribbon {
     width: auto;
@@ -96,7 +99,7 @@ input::placeholder {
 
 
 #zip_code {
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -106,8 +109,10 @@ fieldset {
 
 }
 
-input:focus {
-    color: rgb(85, 85, 85);
+input:focus, textarea:focus, select:focus  {
+    border: solid  3px rgb(131, 131, 131);
+    background-color: rgb(173, 173, 173);
+
   }
 
 input[type="checkbox"] {
@@ -167,6 +172,11 @@ h5 {
     .main_wrapper {
         max-width:768px;
         width: 100%;
+    }
+
+    #zip_code {
+        width: 25%;
+    
     }
 
 }

@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./public/CSS/Style.css"/>
 </head>
 <body>
+    <div class="header_ribbon">
+        <h1>THE CODE REVIEW</h1>
+    </div>
     <div class="main_wrapper">
         <header>
-            <div class="header_ribbon">
-                <h1>THE CODE REVIEW</h1>
-            </div>
             <h1 class="header_title">sign up for our newsletter</h1>
             <p class="header_para">Get the latest news on how your code is doing right in your inbox</p>
             <div class="header_line1"></div>
@@ -30,10 +30,10 @@
                     <input name="full_name" id="full_name" class="require" type="text" placeholder="Require">
 
                     <label for="email_address">Email address</label>
-                    <input name="email_address" id="email_address" class="require" type="text" placeholder="Require"> 
+                    <input name="email_address" id="email_address" class="require" type="email" placeholder="Require"> 
 
                     <label for="phone_number">Phone Number</label>
-                    <input name="phone_number" id="phone_number" type="text">
+                    <input name="phone_number" id="phone_number" type="tel">
 
                     <label for="street_address">Street Address</label>
                     <input name="street_address" id="street_address" type="text">
@@ -42,7 +42,7 @@
                     <input name="city" id="city" type="text">
 
                     <label for="state_">State</label>
-                    <select id="state_">
+                    <select id="state_" name="state">
                         <optgroup label="states" >
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -112,8 +112,8 @@
                     
                     <label>News letter Format</label>
                    
-                    <input type="radio" id="format_html" value="html" name="format_html"><label for="format_html" class="asdf">HTML</label><br>
-                    <input type="radio" id="format_plain_text" value="text" name="format_plain_text"><label for="format_plain_text" class="asdf">Plain Text</label>
+                    <input type="radio" id="format_html" value="html" name="format"><label for="format_html" class="asdf">HTML</label><br>
+                    <input type="radio" id="format_plain_text" value="text" name="format"><label for="format_plain_text" class="asdf">Plain Text</label>
 
                     <label for="other_topics">Other topic you'd like to hear about</label>
                     <textarea id="other_topics" name="other_topics"> </textarea>
