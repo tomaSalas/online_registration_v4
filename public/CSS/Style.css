@@ -16,6 +16,7 @@ body {
     justify-content: center;
     margin: auto;
 }
+
 .header_ribbon {
     width: auto;
     height: auto;
@@ -67,7 +68,7 @@ form {
 }
 
 form label {
-    display: block;
+    display: inline-block;
 
 }
 
@@ -78,9 +79,26 @@ label {
 
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex_start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.zip_margin {
+    margin-right: 40px;
+}
 input, select {
+    display: inline-block;
     height: 40px;
-    width: 96%;
+    width: 70%;
     margin-bottom: 5px;
     background-color: rgb(236, 236, 236);
     border: none;
@@ -100,7 +118,7 @@ input::placeholder {
 
 #zip_code {
     width: 50%;
-
+    margin-left: calc(41% - 158px);
 }
 
 fieldset {
@@ -110,7 +128,6 @@ fieldset {
 }
 
 input:focus, textarea:focus, select:focus  {
-    border: solid  3px rgb(131, 131, 131);
     background-color: rgb(173, 173, 173);
 
   }
@@ -130,6 +147,10 @@ input[type="radio"] {
 }
 .asdf {
 display: inline-block;
+}
+
+.break {
+    display: block;
 }
 
 textarea {
