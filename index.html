@@ -42,14 +42,14 @@
                         <input name="street_address" id="street_address" type="text">
                     </div>
                     <div class="flex">
-                        <label for="city">City</label>
+                        <label class="item" for="city">City</label>
                         <input name="city" id="city" type="text">
                     </div>
                     <div class="flex">
-                        <label for="state_">State</label>
+                        <label class="item" for="state_">State</label>
                         <select id="state_" name="state">
-                            <optgroup label="states">
-                                <option value="" disabled selected></option>
+                            <optgroup label="states" >
+                                <option class="hidden" value="" disabled selected hidden>Choose State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -102,29 +102,29 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                             </optgroup>
-                        </select>
+                        </select>	
                     </div>
-                    <div class="flex flex_start">	
-                        <label for="zip_code zip_margin">Zip Code</label>
+                    <div class="flex">
+                        <label for="zip_code">Zip Code</label>
                         <input name="zip_code" id="zip_code" type="text">
-                    </div>  
+                    </div>
                 </fieldset>
                 <div class="header_line"></div>
                 <fieldset>
                     <legend><h2>Newsletter</h2></legend>
-                    <label class="break">Select the newsletters you would like to receive</label>
+                    <label>Select the newsletters you would like to receive</label>
                    
                     <input type="checkbox" id="news_html" value="html" name="news"><label for="news_html" class="asdf">HTML News</label><br>
                    
                     <input type="checkbox" id="news_javascript" value="javascript" name="news"><label for="news_javascript" class="asdf">CSS News</label><br>
                     <input type="checkbox" id="news_css" value="css" name="news"><label for="news_css" class="asdf">javascript News</label>
                     
-                    <label class="break">News letter Format</label>
+                    <label>News letter Format</label>
                    
                     <input type="radio" id="format_html" value="html" name="format"><label for="format_html" class="asdf">HTML</label><br>
                     <input type="radio" id="format_plain_text" value="text" name="format"><label for="format_plain_text" class="asdf">Plain Text</label>
 
-                    <label class="break" for="other_topics">Other topic you'd like to hear about</label>
+                    <label for="other_topics">Other topic you'd like to hear about</label>
                     <textarea id="other_topics" name="other_topics"> </textarea>
                 </fieldset>
                 <button type="submit">Sigh Up</button>

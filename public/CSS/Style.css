@@ -16,7 +16,6 @@ body {
     justify-content: center;
     margin: auto;
 }
-
 .header_ribbon {
     width: auto;
     height: auto;
@@ -68,7 +67,7 @@ form {
 }
 
 form label {
-    display: inline-block;
+    display: block;
 
 }
 
@@ -79,26 +78,9 @@ label {
 
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.flex_start {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-
-.zip_margin {
-    margin-right: 40px;
-}
 input, select {
-    display: inline-block;
     height: 40px;
-    width: 70%;
+    width: 96%;
     margin-bottom: 5px;
     background-color: rgb(236, 236, 236);
     border: none;
@@ -118,7 +100,7 @@ input::placeholder {
 
 #zip_code {
     width: 50%;
-    margin-left: calc(41% - 158px);
+
 }
 
 fieldset {
@@ -147,10 +129,6 @@ input[type="radio"] {
 }
 .asdf {
 display: inline-block;
-}
-
-.break {
-    display: block;
 }
 
 textarea {
@@ -189,15 +167,45 @@ h5 {
 
 }
 
+.hidden {
+    text-align: right;
+    font-style: italic;
+    text-align: right;
+    font-size: .65rem;
+    margin-right: 20px;
+    line-height: normal; 
+    color:rgb(139, 139, 139) ;
+
+}
+
 @media screen and (min-width: 768px) {
     .main_wrapper {
-        max-width:768px;
+        max-width:1024px;
         width: 100%;
     }
 
-    #zip_code {
-        width: 25%;
+
+    .flex{
+        margin: 15px 0px 15px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    };
+
+    input {
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
     
+    label {
+        flex-basis: 20%;
+    }
+    
+    #zip_code {
+        max-width: 25%;
     }
 
+    label[for="zip_code"] {
+        flex-basis: 17.3%
+    }
 }
